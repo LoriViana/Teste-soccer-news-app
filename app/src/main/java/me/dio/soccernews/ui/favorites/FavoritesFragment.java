@@ -16,10 +16,9 @@ public class FavoritesFragment extends Fragment {
 
     private FragmentFavoritesBinding binding;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        FavoritesViewModel FavoritesViewModel =
-                new ViewModelProvider(this).get(FavoritesViewModel.class);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
+        FavoritesViewModel FavoritesViewModel = new ViewModelProvider(this).get(FavoritesViewModel.class);
 
         binding = FragmentFavoritesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
